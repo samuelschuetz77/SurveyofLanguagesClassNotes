@@ -5,8 +5,9 @@
 
 (define (eval code)
     (cond
-    ((eq? (car code) (quote quote)) (cdr code))
+    [(eq? (car code) 'quote) (cadr code)]
+    [(eq? (car code) '+) (apply + (map)) ()]
     )
 )
 
-(eval '(quote (hello this (is cool) code)))
+(eval '(quote (hello this (is cool) code))) ;; test if quote works
