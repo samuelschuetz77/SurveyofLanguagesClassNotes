@@ -1,0 +1,9 @@
+() parens in racket mean "calling function _____whatever inside parens______"
+
+quote 
+
+'()                  ; the empty list
+'(1 2 3)             ; a literal list of numbers
+'("a" "b" "c")       ; a literal list of strings
+'foo                 ; the symbol foo (not a variable, just the word itself)
+
